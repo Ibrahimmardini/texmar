@@ -11,7 +11,6 @@
     'version': '10.0',
     'depends': ['base','account',  'purchase_discount', 'sales_custome'],
     'data': [
-        'reports/reports.xml',
         'views/signs.xml',
     ],
     'installable': True,
