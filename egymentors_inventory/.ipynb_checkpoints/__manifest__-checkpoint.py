@@ -32,9 +32,6 @@
     'depends': ['base', 'stock', 'purchase', 'purchase_requisition', 'report_xlsx', 'purchase_discount',
                 'egymentors_product_code', 'sales_custome'],
     'data': [
-        'reports/reports.xml',
-        'reports/delivery_slip_report.xml',
-        'reports/return_delivery_report.xml',
         'views/quantity_in_words.xml',
     ],
     'installable': True,
