@@ -121,7 +121,7 @@ class ProductTemplateInherit(models.Model):
         for product in self:
             if product.default_code and \
             self.env['product.template'].search_count([('default_code', '=', product.default_code)]) > 1:
-                raise Warning(_("Internal Reference violating unique constrain!!!"))
+#                raise Warning(_("Internal Reference violating unique constrain!!!"))
 
     @api.onchange('style_field','attribute_line_ids')
     @api.depends('style_field')
