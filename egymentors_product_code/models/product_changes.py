@@ -116,12 +116,12 @@ class ProductTemplateInherit(models.Model):
     
     texmar_width = fields.Many2one('product.width',"Width")
     
-    @api.constrains('default_code')
-    def default_code_unique_constrain(self):
-        for product in self:
-            if product.default_code and \
-            self.env['product.template'].search_count([('default_code', '=', product.default_code)]) > 1:
-                raise Warning(_("Internal Reference violating unique constrain!!!"))
+ #   @api.constrains('default_code')
+ #   def default_code_unique_constrain(self):
+ #       for product in self:
+ #           if product.default_code and \
+ #           self.env['product.template'].search_count([('default_code', '=', product.default_code)]) > 1:
+ #               raise Warning(_("Internal Reference violating unique constrain!!!"))
 
     @api.onchange('style_field','attribute_line_ids')
     @api.depends('style_field')
